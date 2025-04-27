@@ -2,8 +2,10 @@
 
 import { useEffect } from 'react';
 
-const GlowCard = ({ children , identifier}) => {
+const GlowCard = ({ children, identifier }) => {
   useEffect(() => {
+    if (typeof document === 'undefined') return; // ✅ Protect against SSR issues
+
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
 
@@ -37,8 +39,7 @@ const GlowCard = ({ children , identifier}) => {
         ];
 
         let ANGLE =
-          (Math.atan2(event?.y - CARD_CENTER[1], event?.x - CARD_CENTER[0]) *
-            180) /
+          (Math.atan2(event?.y - CARD_CENTER[1], event?.x - CARD_CENTER[0]) * 180) /
           Math.PI;
 
         ANGLE = ANGLE < 0 ? ANGLE + 360 : ANGLE;
