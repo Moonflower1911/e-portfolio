@@ -1,20 +1,20 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    title: " Cycle ingénieur en Génie Logiciel",
+    duration: "2023 – 2026",
+    institution: "École nationale supérieure d’informatique et d’analyse des systèmes (ENSIAS) – Rabat, Maroc",
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    title: "CPGE – Filière MP (Maths-Physique)",
+    duration: "2021 – 2023",
+    institution: "Lycée Mohammed V -  Casablanca, Maroc",
   },
   {
     id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    title: " Bac Sciences Mathématiques A (option française)",
+    duration: "2020 – 2021",
+    institution: "Lycée Khadija Oum Al Mouminine - Casablanca, Maroc",
   }
 ]
